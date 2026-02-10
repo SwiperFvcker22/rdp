@@ -35,7 +35,7 @@ jobs:
 
       - name: Establish Tailscale Connection
         run: |
-          $authKey = "${{ secrets.TAILSCALE_AUTH_KEY }}"
+          $authKey = "${{ secrets.TAILSCALE_AUTHKEY }}"
           if ($authKey) {
               Write-Host "Key ditemukan, login otomatis..."
               & "$env:ProgramFiles\Tailscale\tailscale.exe" up --authkey=$authKey --hostname=skyro-rdp-${{ github.run_id }}
