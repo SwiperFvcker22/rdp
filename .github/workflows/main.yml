@@ -6,7 +6,7 @@ on:
 jobs:
   secure-rdp:
     runs-on: windows-latest
-    timeout-minutes: 3600 # Maksimal 6 jam (360 menit sebenarnya, tapi 3600 biar aman)
+    timeout-minutes: 432000 # Maksimal 6 jam (360 menit sebenarnya, tapi 3600 biar aman)
 
     steps:
       - name: Configure Core RDP Settings
